@@ -1,6 +1,6 @@
 {
-    "name": "portpolio",
-    "short_name": "portpolio",
+    "name": "Kabir's Portfolio",
+    "short_name": "Kabir's Portfolio",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

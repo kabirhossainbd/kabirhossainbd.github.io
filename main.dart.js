@@ -399,7 +399,7 @@ r=(r==null?$.bK=A.e8(self.window.flutterConfiguration):r).b
 if(r==null)s=null
 else{r=r.canvasKitVariant
 if(r==null)r=null
-s=r}r=A.azp(A.arS(B.Ci,s==null?"auto":s))
+s=r}r=A.azp(A.arS(B.Cj,s==null?"auto":s))
 return new A.af(r,new A.abC(),A.a8(r).h("af<1,q>"))},
 ayw(a,b){return b+a},
 R2(){var s=0,r=A.W(t.e),q,p,o
@@ -1238,7 +1238,7 @@ switch(b.a){case 5:case 9:s=A.nr()
 r=A.a7("sRGB")
 if(r==null)r=t.K.a(r)
 s.c.setAttribute("color-interpolation-filters",r)
-s.vC(B.Cs,p)
+s.vC(B.Ct,p)
 r=A.cq(a.a)
 s.lr(r,"1",o)
 s.qs(o,p,1,0,0,0,6,n)
@@ -1822,7 +1822,7 @@ for(s=0;s<p;++s){r=q[s]
 if(r.c===B.a5)r.hH()}},
 aiA(a,b,c){return new A.E8(a,b,c)},
 az5(a){var s,r,q,p,o,n,m
-$label0$0:for(s=a.length,r=0;r<6;++r){q=B.C5[r]
+$label0$0:for(s=a.length,r=0;r<6;++r){q=B.C6[r]
 p=q.a
 o=p.length
 if(s<o)continue $label0$0
@@ -22729,7 +22729,7 @@ return b instanceof A.rW&&b.a.j(0,this.a)&&b.b===this.b},
 i(a){return"ColorFilter.mode("+this.a.i(0)+", "+this.b.i(0)+")"}}
 A.rY.prototype={
 gYD(){var s,r,q=new Float32Array(20)
-for(s=this.a,r=0;r<20;++r)if(B.b.p(B.C8,r))q[r]=s[r]/255
+for(s=this.a,r=0;r<20;++r)if(B.b.p(B.C9,r))q[r]=s[r]/255
 else q[r]=s[r]
 return q},
 xj(){return $.bn.aY().ColorFilter.MakeMatrix(this.gYD())},
@@ -28563,7 +28563,7 @@ k=t.f
 i=k.a(J.bc(k.a(B.bf.e3(b)),"data"))
 h=A.cw(J.bc(i,"message"))
 if(h!=null&&h.length!==0){g=A.aeC(i,"assertiveness")
-q.J4(h,B.Ck[g==null?0:g])}f.dE(c,B.bf.bn(!0))
+q.J4(h,B.Cl[g==null?0:g])}f.dE(c,B.bf.bn(!0))
 return
 case"flutter/navigation":f.e.k(0,0).zX(b).bC(0,new A.V9(f,c),t.P)
 f.to="/"
@@ -30020,7 +30020,7 @@ Vz(){var s=this,r=s.Q
 if(r==null){r=s.Q=new A.rh(s.r)
 r.d=new A.Vg(s)}return r},
 Mt(a){var s,r=this
-if(B.b.p(B.Cl,a.type)){s=r.Vz()
+if(B.b.p(B.Cm,a.type)){s=r.Vz()
 s.toString
 s.sz6(J.eG(r.r.$0(),B.kq))
 if(r.z!==B.kC){r.z=B.kC
@@ -56159,7 +56159,7 @@ case 1:return A.U(q,r)}})
 return A.V($async$xb,r)},
 Vq(a,b){var s,r,q,p
 if(a===b)return B.CX
-if(a===B.dN&&b===B.cr)return B.Cj
+if(a===B.dN&&b===B.cr)return B.Ck
 s=A.a([],t.QP)
 if(a==null)s.push(b)
 else{r=B.b.iA(B.ec,a)
@@ -68312,7 +68312,7 @@ $S:7}
 A.Z3.prototype={
 $1(a){var s=null,r=$.cz.a,q=r.a
 q=A.P(70,q>>>16&255,q>>>8&255,q&255)
-return new A.c8(B.fU,A.YK(A.aiV(A.ms(B.C6[a.a],r,s),A.bu(a.b,$.iS,s),s),s,q,new A.Z1(this.a,a,this.b),s,s),s)},
+return new A.c8(B.fU,A.YK(A.aiV(A.ms(B.C7[a.a],r,s),A.bu(a.b,$.iS,s),s),s,q,new A.Z1(this.a,a,this.b),s,s),s)},
 $S:93}
 A.Z1.prototype={
 $0(){var s,r,q=this.b.a
@@ -68582,7 +68582,7 @@ A.a0d.prototype={
 $0(){this.a.d=!1},
 $S:0}
 A.I6.prototype={
-G(a){var s=A.ec(a,!0,t.R),r=$.bf,q=new A.eX(B.Cu,t.ly)
+G(a){var s=A.ec(a,!0,t.R),r=$.bf,q=new A.eX(B.C0,t.ly)
 return A.nC(B.dK,q.gct(q).d2(0,new A.a3r(a,s),t.iF).cn(0),B.dL,r*10*0.77+10,0)}}
 A.a3r.prototype={
 $1(a){var s,r,q,p,o,n=null,m=this.a,l=t.w
@@ -68598,7 +68598,7 @@ m=m.a.a<600?l*10*0.77+10:l*15*0.77+15
 return new A.c8(s,A.aiC(B.dQ,$.cz.a,new A.oQ(o,p,q,n),m,new A.a3q(a),r*12*0.77+12),n)},
 $S:93}
 A.a3q.prototype={
-$0(){return A.lJ(A.dm(B.C7[this.a.a],0,null))},
+$0(){return A.lJ(A.dm(B.C8[this.a.a],0,null))},
 $S:0}
 A.hv.prototype={
 G(a){return A.dy(A.a([A.ms(B.B3,$.cz.a,$.bf*6*0.77+6),A.bu(" "+this.c+" ",$.rx,null)],t.p),B.u,B.a4)}}
@@ -71789,45 +71789,45 @@ B.BG=new A.uD(B.Bb,B.N8,null,null)
 B.BH=A.a(s([0,1]),t.l)
 B.BI=A.a(s([0,6,12,18]),t.t)
 B.kN=A.a(s(["https://pub.dev/packages/awesome_snackbar_content","https://github.com/mhmzdev/The_Holy_Quran_App","https://github.com/mhmzdev/MedKit-Pharmacy-App-Using-Flutter","https://github.com/mhmzdev/Here-I-Am-Alert-App","https://github.com/mhmzdev/Covid19-Tracker-App","https://github.com/mhmzdev/Messenger-Chat-Head-Flutter-UI","https://github.com/mhmzdev/flutter.dev-Flutter-Web-Clone","https://github.com/mhmzdev/Earbender_Music_App","https://github.com/mhmzdev/FTP_GUI_Java","https://github.com/mhmzdev/My-Order-Resturant-Ordering-System","https://github.com/mhmzdev/Hidev_Web"]),t.s)
+B.C0=A.a(s(["https://img.icons8.com/metro/50/ffffff/linkedin.png","https://img.icons8.com/material-rounded/50/ffffff/github.png","https://img.icons8.com/ios/50/whatsapp--v1.png","https://img.icons8.com/ios/50/apple-mail.png"]),t.s)
 B.CO=A.a(s([137,80,78,71,13,10,26,10]),t.Z)
 B.Bd=new A.jc(B.CO,"image/png")
-B.C3=A.a(s([71,73,70,56,55,97]),t.Z)
-B.Bh=new A.jc(B.C3,"image/gif")
-B.C4=A.a(s([71,73,70,56,57,97]),t.Z)
-B.Bi=new A.jc(B.C4,"image/gif")
+B.C4=A.a(s([71,73,70,56,55,97]),t.Z)
+B.Bh=new A.jc(B.C4,"image/gif")
+B.C5=A.a(s([71,73,70,56,57,97]),t.Z)
+B.Bi=new A.jc(B.C5,"image/gif")
 B.BJ=A.a(s([255,216,255]),t.Z)
 B.Be=new A.jc(B.BJ,"image/jpeg")
-B.Cn=A.a(s([82,73,70,70,null,null,null,null,87,69,66,80]),t.Z)
-B.Bg=new A.jc(B.Cn,"image/webp")
-B.Ch=A.a(s([66,77]),t.Z)
-B.Bf=new A.jc(B.Ch,"image/bmp")
-B.C5=A.a(s([B.Bd,B.Bh,B.Bi,B.Be,B.Bg,B.Bf]),A.ab("w<jc>"))
+B.Co=A.a(s([82,73,70,70,null,null,null,null,87,69,66,80]),t.Z)
+B.Bg=new A.jc(B.Co,"image/webp")
+B.Ci=A.a(s([66,77]),t.Z)
+B.Bf=new A.jc(B.Ci,"image/bmp")
+B.C6=A.a(s([B.Bd,B.Bh,B.Bi,B.Be,B.Bg,B.Bf]),A.ab("w<jc>"))
 B.kF=new A.cN(58136)
 B.B1=new A.cN(58513)
 B.B6=new A.cN(59122)
 B.AX=new A.cN(57622)
 B.B5=new A.cN(58751)
 B.AY=new A.cN(57739)
-B.C6=A.a(s([B.kF,B.B1,B.B6,B.AX,B.B5,B.AY]),t.G1)
-B.C7=A.a(s(["https://www.linkedin.com/in/mdkabirhossainbd/","https://github.com/kabirhossainbd","https://wa.me/+8801787816047","mailto:kabirhossenbd1971@gmail.com"]),t.s)
-B.C8=A.a(s([4,9,14,19]),t.t)
+B.C7=A.a(s([B.kF,B.B1,B.B6,B.AX,B.B5,B.AY]),t.G1)
+B.C8=A.a(s(["https://www.linkedin.com/in/mdkabirhossainbd/","https://github.com/kabirhossainbd","https://wa.me/+8801787816047","mailto:kabirhossenbd1971@gmail.com"]),t.s)
+B.C9=A.a(s([4,9,14,19]),t.t)
 B.hd=A.a(s([0,0,65498,45055,65535,34815,65534,18431]),t.t)
 B.kO=A.a(s([60,70,30,70]),t.l)
 B.yJ=new A.oe(0,"auto")
 B.yK=new A.oe(1,"full")
 B.yL=new A.oe(2,"chromium")
-B.Ci=A.a(s([B.yJ,B.yK,B.yL]),A.ab("w<oe>"))
+B.Cj=A.a(s([B.yJ,B.yK,B.yL]),A.ab("w<oe>"))
 B.kP=A.a(s([B.h1,B.e3,B.cQ,B.e6,B.ea,B.c5,B.kM,B.hc,B.ax,B.eb,B.bJ,B.cN,B.cO,B.e4,B.cP,B.h2,B.bk,B.h3,B.h4,B.kK,B.aw,B.e5,B.cR,B.cS,B.h5,B.h6,B.h7,B.h8,B.kL,B.h9,B.ha,B.e7,B.cT,B.cU,B.hb,B.e8,B.e9]),A.ab("w<bg>"))
 B.kQ=A.a(s(["Address","Telephone","Email"]),t.s)
 B.ec=A.a(s([B.cr,B.dM,B.fk,B.fl,B.dN]),t.QP)
-B.Cj=A.a(s([B.cr]),t.QP)
-B.Ck=A.a(s([B.fm,B.fn]),A.ab("w<rA>"))
+B.Ck=A.a(s([B.cr]),t.QP)
+B.Cl=A.a(s([B.fm,B.fn]),A.ab("w<rA>"))
 B.kR=A.a(s([0,4,12,1,5,13,3,7,15]),t.t)
-B.Cl=A.a(s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","keyup","keydown"]),t.s)
+B.Cm=A.a(s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","keyup","keydown"]),t.s)
 B.kS=A.a(s(["HOME","ABOUT ME","SERVICE","PROJECTS","CONTACT"]),t.s)
 B.kT=A.a(s(["Uttora, Dhaka, Bangladesh","+8801787816047","kabirhossenbd1971@gmail.com"]),t.s)
-B.Cs=A.a(s([0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0]),t.l)
-B.Cu=A.a(s(["https://img.icons8.com/metro/308/ffffff/linkedin.png","https://img.icons8.com/material-rounded/384/ffffff/github.png","https://img.icons8.com/ios/50/whatsapp--v1.png","https://img.icons8.com/ios/50/apple-mail.png"]),t.s)
+B.Ct=A.a(s([0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0]),t.l)
 B.kU=A.a(s(["Mobile Application Development","UI/UX Design","Application Prototyping","Blog","Open Source - GitHub"]),t.s)
 B.kV=A.a(s(["A very unique dart package to uplift the snackbar experience in flutter. Available at pub.dev now!","Application of Holy book of Muslims, Al-Qur'an. Developed using Flutter. Powered with live RestAPI given in README.md","A Phramacy app developed using Flutter powered with Firebase as database with Doctor and Patient panels.","Here I am is an Alert app that Sends alert SMS holding your location (Address and Google Maps) to your loved ones.","A live trakcer for COVID19 stats across the Globe and my Home country Pakistan. It uses APIs so the data is live.","Tried to clone the famous Chat Heads by Facebook Messenger using Flutter. Its basically in-app not exactly like the original chat head.","Flutter Official Site clone using Flutter Web. Try the live site here. For the time being its not responsive fully so there might be responsiveness issues.","A concept of Music App developed using Flutter. Having functionality of playing Audio.","A simple GUI based Java application that sends file from Client to Server but not the other way around.","A concept app for self-services at various restaurants now a days. More like a Restaurant Ordering System.","Its my end semester project. The whole design I developed here is an inspiration from my favortie Flutter Developer Marcin Sza\u0142ek and his blog Fidev."]),t.s)
 B.Dr=new A.kQ("en","US")
@@ -72765,35 +72765,35 @@ B.BX=A.a(s([42,null,null,8589935146]),t.Z)
 B.BY=A.a(s([43,null,null,8589935147]),t.Z)
 B.BZ=A.a(s([45,null,null,8589935149]),t.Z)
 B.C_=A.a(s([46,null,null,8589935150]),t.Z)
-B.C0=A.a(s([47,null,null,8589935151]),t.Z)
-B.C1=A.a(s([48,null,null,8589935152]),t.Z)
-B.C2=A.a(s([49,null,null,8589935153]),t.Z)
-B.C9=A.a(s([50,null,null,8589935154]),t.Z)
-B.Ca=A.a(s([51,null,null,8589935155]),t.Z)
-B.Cb=A.a(s([52,null,null,8589935156]),t.Z)
-B.Cc=A.a(s([53,null,null,8589935157]),t.Z)
-B.Cd=A.a(s([54,null,null,8589935158]),t.Z)
-B.Ce=A.a(s([55,null,null,8589935159]),t.Z)
-B.Cf=A.a(s([56,null,null,8589935160]),t.Z)
-B.Cg=A.a(s([57,null,null,8589935161]),t.Z)
-B.Co=A.a(s([8589934852,8589934852,8589934853,null]),t.Z)
+B.C1=A.a(s([47,null,null,8589935151]),t.Z)
+B.C2=A.a(s([48,null,null,8589935152]),t.Z)
+B.C3=A.a(s([49,null,null,8589935153]),t.Z)
+B.Ca=A.a(s([50,null,null,8589935154]),t.Z)
+B.Cb=A.a(s([51,null,null,8589935155]),t.Z)
+B.Cc=A.a(s([52,null,null,8589935156]),t.Z)
+B.Cd=A.a(s([53,null,null,8589935157]),t.Z)
+B.Ce=A.a(s([54,null,null,8589935158]),t.Z)
+B.Cf=A.a(s([55,null,null,8589935159]),t.Z)
+B.Cg=A.a(s([56,null,null,8589935160]),t.Z)
+B.Ch=A.a(s([57,null,null,8589935161]),t.Z)
+B.Cp=A.a(s([8589934852,8589934852,8589934853,null]),t.Z)
 B.BM=A.a(s([4294967555,null,4294967555,null]),t.Z)
 B.BN=A.a(s([4294968065,null,null,8589935154]),t.Z)
 B.BO=A.a(s([4294968066,null,null,8589935156]),t.Z)
 B.BP=A.a(s([4294968067,null,null,8589935158]),t.Z)
 B.BQ=A.a(s([4294968068,null,null,8589935160]),t.Z)
 B.BV=A.a(s([4294968321,null,null,8589935157]),t.Z)
-B.Cp=A.a(s([8589934848,8589934848,8589934849,null]),t.Z)
+B.Cq=A.a(s([8589934848,8589934848,8589934849,null]),t.Z)
 B.BL=A.a(s([4294967423,null,null,8589935150]),t.Z)
 B.BR=A.a(s([4294968069,null,null,8589935153]),t.Z)
 B.BK=A.a(s([4294967309,null,null,8589935117]),t.Z)
 B.BS=A.a(s([4294968070,null,null,8589935159]),t.Z)
 B.BW=A.a(s([4294968327,null,null,8589935152]),t.Z)
-B.Cq=A.a(s([8589934854,8589934854,8589934855,null]),t.Z)
+B.Cr=A.a(s([8589934854,8589934854,8589934855,null]),t.Z)
 B.BT=A.a(s([4294968071,null,null,8589935155]),t.Z)
 B.BU=A.a(s([4294968072,null,null,8589935161]),t.Z)
-B.Cr=A.a(s([8589934850,8589934850,8589934851,null]),t.Z)
-B.q9=new A.ct(["*",B.BX,"+",B.BY,"-",B.BZ,".",B.C_,"/",B.C0,"0",B.C1,"1",B.C2,"2",B.C9,"3",B.Ca,"4",B.Cb,"5",B.Cc,"6",B.Cd,"7",B.Ce,"8",B.Cf,"9",B.Cg,"Alt",B.Co,"AltGraph",B.BM,"ArrowDown",B.BN,"ArrowLeft",B.BO,"ArrowRight",B.BP,"ArrowUp",B.BQ,"Clear",B.BV,"Control",B.Cp,"Delete",B.BL,"End",B.BR,"Enter",B.BK,"Home",B.BS,"Insert",B.BW,"Meta",B.Cq,"PageDown",B.BT,"PageUp",B.BU,"Shift",B.Cr],A.ab("ct<q,E<m?>>"))
+B.Cs=A.a(s([8589934850,8589934850,8589934851,null]),t.Z)
+B.q9=new A.ct(["*",B.BX,"+",B.BY,"-",B.BZ,".",B.C_,"/",B.C1,"0",B.C2,"1",B.C3,"2",B.Ca,"3",B.Cb,"4",B.Cc,"5",B.Cd,"6",B.Ce,"7",B.Cf,"8",B.Cg,"9",B.Ch,"Alt",B.Cp,"AltGraph",B.BM,"ArrowDown",B.BN,"ArrowLeft",B.BO,"ArrowRight",B.BP,"ArrowUp",B.BQ,"Clear",B.BV,"Control",B.Cq,"Delete",B.BL,"End",B.BR,"Enter",B.BK,"Home",B.BS,"Insert",B.BW,"Meta",B.Cr,"PageDown",B.BT,"PageUp",B.BU,"Shift",B.Cs],A.ab("ct<q,E<m?>>"))
 B.Da=A.a(s([B.lj,null,null,B.q_]),t.L)
 B.Db=A.a(s([B.pM,null,null,B.q0]),t.L)
 B.Dc=A.a(s([B.pN,null,null,B.q1]),t.L)
@@ -72817,7 +72817,7 @@ B.CH=A.a(s([B.aF,null,null,B.hv]),t.L)
 B.CQ=A.a(s([B.aP,null,null,B.hx]),t.L)
 B.D2=A.a(s([B.hl,null,null,B.hu]),t.L)
 B.D6=A.a(s([B.d0,B.d0,B.el,null]),t.L)
-B.Ct=A.a(s([B.ar,null,null,B.ho]),t.L)
+B.Cu=A.a(s([B.ar,null,null,B.ho]),t.L)
 B.CI=A.a(s([B.bK,null,null,B.hq]),t.L)
 B.Df=A.a(s([B.eh,null,null,B.hn]),t.L)
 B.CJ=A.a(s([B.bL,null,null,B.hw]),t.L)
@@ -72826,7 +72826,7 @@ B.D7=A.a(s([B.d2,B.d2,B.en,null]),t.L)
 B.CK=A.a(s([B.cZ,null,null,B.hs]),t.L)
 B.D4=A.a(s([B.d_,null,null,B.hy]),t.L)
 B.D8=A.a(s([B.bM,B.bM,B.c6,null]),t.L)
-B.Fh=new A.ct(["*",B.Da,"+",B.Db,"-",B.Dc,".",B.Dd,"/",B.De,"0",B.Cw,"1",B.Cx,"2",B.Cy,"3",B.Cz,"4",B.CA,"5",B.CB,"6",B.CC,"7",B.CD,"8",B.Dn,"9",B.Do,"Alt",B.D5,"AltGraph",B.Dp,"ArrowDown",B.CF,"ArrowLeft",B.CG,"ArrowRight",B.CH,"ArrowUp",B.CQ,"Clear",B.D2,"Control",B.D6,"Delete",B.Ct,"End",B.CI,"Enter",B.Df,"Home",B.CJ,"Insert",B.D3,"Meta",B.D7,"PageDown",B.CK,"PageUp",B.D4,"Shift",B.D8],A.ab("ct<q,E<f?>>"))
+B.Fh=new A.ct(["*",B.Da,"+",B.Db,"-",B.Dc,".",B.Dd,"/",B.De,"0",B.Cw,"1",B.Cx,"2",B.Cy,"3",B.Cz,"4",B.CA,"5",B.CB,"6",B.CC,"7",B.CD,"8",B.Dn,"9",B.Do,"Alt",B.D5,"AltGraph",B.Dp,"ArrowDown",B.CF,"ArrowLeft",B.CG,"ArrowRight",B.CH,"ArrowUp",B.CQ,"Clear",B.D2,"Control",B.D6,"Delete",B.Cu,"End",B.CI,"Enter",B.Df,"Home",B.CJ,"Insert",B.D3,"Meta",B.D7,"PageDown",B.CK,"PageUp",B.D4,"Shift",B.D8],A.ab("ct<q,E<f?>>"))
 B.Fi=new A.uP(null,null,null,null,null,null,null,null)
 B.zm=new A.z(4284790262)
 B.ze=new A.z(4282557941)
@@ -73577,8 +73577,8 @@ B.Oj=new A.xL(0,"inside")
 B.Ok=new A.xL(1,"higher")
 B.Ol=new A.xL(2,"lower")
 B.zR=new A.z(67108864)
-B.Cm=A.a(s([B.zR,B.t]),t.t_)
-B.Om=new A.hC(B.Cm)
+B.Cn=A.a(s([B.zR,B.t]),t.t_)
+B.Om=new A.hC(B.Cn)
 B.On=new A.hC(null)
 B.bq=new A.y3(0,"ready")
 B.Ot=new A.y3(1,"possible")

@@ -1,37 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-
-  <style>
-      .container {
-        width: 100vw;
-        height: 100vh;
-        display: flex; /* Default Axis is X*/
-        justify-content: center; /* Main Axis */
-        align-items: center; /* Cross Axis */
-      }
-      .indicator{
-        width: 50vw;
-      }
-  </style>
   <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="This is personal portfolio site.">
+  <meta name="description" content="Md. Kabir Hossain - Mobile Architect & Senior Flutter Engineer Portfolio">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -42,61 +16,87 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>Kabir's Portfolio</title>
+  <title>Md. Kabir Hossain | Mobile Architect & Senior Flutter Engineer</title>
   <link rel="manifest" href="manifest.json">
 
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "2774447620";
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+  <style>
+    body {
+      background-color: #0B0F19;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      overflow: hidden;
+    }
+    #loading-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at center, #111827 0%, #0B0F19 100%);
+      z-index: 99999;
+      transition: opacity 0.5s ease-out;
+    }
+    .logo-box {
+      font-size: 32px;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: 1px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+    }
+    .logo-box span {
+      color: #00D2FF;
+    }
+    .spinner-ring {
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(255, 255, 255, 0.1);
+      border-top: 3px solid #00D2FF;
+      border-right: 3px solid #A855F7;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    .loading-subtext {
+      margin-top: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #94A3B8;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
 </head>
 <body>
-
-<div id="loading_indicator" class="container">
-  <img class="indicator" src="loader.gif" />
-</div>
-
+  <div id="loading-container">
+    <div class="logo-box">Kabir<span>.dev</span></div>
+    <div class="spinner-ring"></div>
+    <div class="loading-subtext">Loading Portfolio...</div>
   <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
-      });
+    function hideLoader() {
+      var loader = document.getElementById('loading-container');
+      if (loader && loader.style.display !== 'none') {
+        loader.style.opacity = '0';
+        setTimeout(function() {
+          loader.style.display = 'none';
+        }, 500);
+      }
+    }
+    window.addEventListener('flutter-first-frame', hideLoader);
+    window.addEventListener('load', function() {
+      setTimeout(hideLoader, 1000);
     });
+    setTimeout(hideLoader, 2500);
   </script>
-  <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyCKZ9B4_ObWtM-Y3I18wrRftbiWL_q7yio",
-    authDomain: "kabir-s-portfolio.firebaseapp.com",
-    projectId: "kabir-s-portfolio",
-    storageBucket: "kabir-s-portfolio.appspot.com",
-    messagingSenderId: "223927331600",
-    appId: "1:223927331600:web:dac0d449fac56d91ac9395",
-    measurementId: "G-Z8BHCD87C5"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
-
-
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
